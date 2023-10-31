@@ -12,7 +12,7 @@ namespace CRUD_EMPLOYEE.Service
 {
     public class EmployeeService : IService
     {
-        public static string ConnectionString = "Server = Employee; Database = CRUDEmployee; Trusted_Connection = True;";
+        public static string ConnectionString = "Server = (localdb)\\MSSQLLocalDB; Database = CRUDEmployee; Trusted_Connection = True;";
         public static void CreateEmployee(Employee e)
         {
             using (SqlConnection connect = new SqlConnection(ConnectionString))
